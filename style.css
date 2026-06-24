@@ -172,11 +172,6 @@ main {
     justify-content: center;
 }
 
-.icons a {
-    text-decoration: none;
-    display: flex;
-}
-
 .peopleDriven img {
     display: block;
     width: 100%;
@@ -208,7 +203,128 @@ main {
     text-decoration: none;
     color: black;
     font-size: 18;
-    cursor:pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
+}
+
+
+.container {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card {
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    max-width: 16rem;
+    max-height: 21rem;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card-title{
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.card-descr {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.card-body p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn {
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px black;
+    background-color: #001b2f;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 5px 5px 25px black;
+    padding: 2%;
+}
+
+
+.pfp {
+    margin-top: 10px;
+    width:140px;
+    height: 140px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-image:url(images/sprites.png) ;
+    border-radius: 100%;
+    transform: scale(1);
+    transform-origin: top left;
+
+}
+
+.pfp1{
+    background-position: -5 0;
+}
+.pfp2{
+    background-position: -250 0;
+}
+.pfp3{
+    background-position: -680 0;
+}
+.pfp4{
+    background-position: -500 0;
+}
+.pfp5{
+    background-position: -40 -140;
+}
+.pfp6{
+    background-position: -500 -140;
+}
+.pfp7{
+    background-position: -680 -140;
+}
+.pfp8{
+    background-position: -500 -140;
+}
+.pfp9{
+    background-position: -680 -280;
+}
+.pfp10{
+    background-position: -680 0;
+}
+.pfp11{
+    background-position: -500 0;
+}
+.pfp12{
+    background-position: -40 -280;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body h5, h6, p{
+    margin: 10px;
+    padding: 2px;
+}
+.card-body{
+    padding-bottom: 10px;
+
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
