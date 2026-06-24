@@ -197,13 +197,13 @@ main {
     cursor: default;
     padding-left: 10;
     color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .infotext a {
     text-decoration: none;
     color: black;
     font-size: 18;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
 }
 
@@ -222,7 +222,6 @@ main {
     text-align: center;
     padding: 5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
     margin: 10px;
     box-shadow: 5px 5px 15px black;
     overflow: hidden;
@@ -238,7 +237,7 @@ main {
     font-weight: 800;
 }
 
-.card-descr {
+.card-desc {
     font-size: 20px;
     font-weight: 800;
 }
