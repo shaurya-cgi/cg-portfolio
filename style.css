@@ -9,6 +9,7 @@ nav {
     background: #001b2f;
     color: #ffffff;
     padding: 15px;
+    z-index: 10;
     
 }
 nav a {
@@ -70,7 +71,7 @@ footer {
     width: 100%;
     font-style: italic;
     text-align: center;
-    background: #222;
+    background: #001b2f;
     color: white;
     padding: 10px;
 }
@@ -120,4 +121,94 @@ main {
     margin-bottom: 10px;
     margin-top: 10px;
 
+}
+
+.contactpage {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    object-fit: fill;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    z-index: -1;
+}
+
+.peopleDriven {
+    width: 100%;
+    height: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(images/peopleDriven.jpg);
+    filter: brightness(95%);
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px black;
+    justify-content: center;
+    font-size: 32;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icons a {
+    text-decoration: none;
+    display: flex;
+}
+
+.peopleDriven img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(100%) saturate(500%) hue-rotate(-20deg);
+}
+
+
+.infotext {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: left;
+    cursor: default;
+    padding-left: 10;
+    color: black;
+}
+
+.infotext a {
+    text-decoration: none;
+    color: black;
+    font-size: 18;
+    cursor:pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
 }
