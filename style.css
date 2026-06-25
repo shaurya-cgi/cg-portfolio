@@ -123,9 +123,26 @@ footer {
     border-radius: 8px;
 }
 
-.loginform {
+.loginform,
+.signup {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.loginform,
+.signup {
+    margin-bottom: 40px;
+}
+
+.loginform input,
+.signup input {
+    padding: 10px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
 }
 
 .contactpage {
@@ -454,11 +471,18 @@ footer {
     left: 40px;
     text-align: left;
 }
+
+.UsertextPrimary h3 {
+    font-size: 28px;
+}
+.UsertextPrimary h4 {
+    font-size: 22px;
+    font-style: italic;
+}
+
 .UsertextPrimary h3, .UsertextPrimary h4, .UsertextPrimary h5, .UsertextPrimary h6, .UsertextPrimary p {
     position: relative;
     text-align: left;
-    font-size: 18px;
-    font-weight: 600;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 0;
@@ -467,7 +491,7 @@ footer {
 .UserButtonsContainer {
     display: flex;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 80px;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -481,7 +505,6 @@ footer {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .UserBtn:hover {
