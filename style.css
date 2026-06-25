@@ -217,19 +217,19 @@ footer {
 .container {
     padding-top: 30px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .card {
     /* border: 2px solid black; */
-    border-radius: 8px;
+    border-radius: 12px;
     max-width: 16rem;
     max-height: 21rem;
     text-align: center;
     padding: 5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 10px;
-    box-shadow: 5px 5px 15px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -239,13 +239,13 @@ footer {
 }
 
 .card-title{
-    font-size: 11px;
+    font-size: 22px;
     font-weight: 800;
 }
 
 .card-desc {
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .card-body p {
@@ -253,14 +253,19 @@ footer {
     font-weight: 300;
 }
 
+.card-body  {
+    
+}
+
 .btn {
     border-radius: 4px;
-    box-shadow: 5px 5px 15px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #001b2f;
     color: #ffffff;
+    cursor: pointer;
     text-decoration: none;
-    box-shadow: 5px 5px 25px black;
     padding: 2%;
+    width: 100px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -314,7 +319,37 @@ footer {
     background-position: -500 0;
 }
 .pfp12{
-    background-position: -40 -280;
+    background-position: -500 -280;
+}
+.pfp13{
+    background-position: -680 -280;
+}
+.pfp14{
+    background-position: -500 -280;
+}
+.pfp15{
+    background-position: -680 0;
+}
+.pfp16{
+    background-position: -40 -140;
+}
+.pfp17{
+    background-position: -40 0;
+}
+.pfp18{
+    background-position: -500 -280;
+}
+.pfp19{
+    background-position: -680 -140;
+}
+.pfp20{
+    background-position: -40 0;
+}
+.pfp21{
+    background-position: -500 -140;
+}
+.pfp22{
+    background-position: -680 -140;
 }
 
 .card-body{
