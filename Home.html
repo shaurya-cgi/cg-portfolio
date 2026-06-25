@@ -7,19 +7,101 @@
             <a href="index.html">
                 <img src="images/logo.png" alt="CG Infinity Logo">
             </a>
+            
             <div class="navbar-links">
-                <a href="login.html">Login</a>
+                <a href="Home.html">Login</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
         </nav>
         
-        <main>
+        <div class="UserHome">
+            <div class="UserInfo">
+                <div class="UserPfp"></div>
+                <div class="UsertextPrimary">
+                    <h3>Shaurya Dhingra</h3>
+                    <h4>SDE Intern</h6>
+                    <h6>Ph. no.: +91-9283XXXXXX</h6>
+                    <h6>Email: shaurya.dhingra@cginfinity.com</h6>
+                </div>
+            </div>
+            <div class="UserButtonsContainer">
+                <button class="UserBtn" data-section="personal">Personal Info</button>
+                <button class="UserBtn" data-section="skills">Tech Skills</button>
+                <button class="UserBtn" data-section="contact">Contact Info</button>
+            </div>
             
-        </main>
+            <!-- Content Containers -->
+            <div class="InfoContainers">
+                <div class="InfoContainer" id="personalContainer" data-section="personal">
+                    <h2>Personal Information</h2>
+                    <div class="InfoContent">
+                        <p><strong>Name:</strong> Shaurya Dhingra</p>
+                        <p><strong>Position:</strong> SDE Intern</p>
+                        <p><strong>Email:</strong> shaurya.dhingra@cginfinity.com</p>
+                        <p><strong>Phone:</strong> +91-9283XXXXXX</p>
+                        <p><strong>Location:</strong> India</p>
+                    </div>
+                </div>
+
+                <div class="InfoContainer" id="skillsContainer" data-section="skills">
+                    <h2>Tech Skills</h2>
+                    <div class="InfoContent">
+                        <p><strong>Languages:</strong> Python, JavaScript, Java, C++</p>
+                        <p><strong>Frontend:</strong> HTML, CSS, React</p>
+                        <p><strong>Backend:</strong> Node.js, Express, MongoDB</p>
+                        <p><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</p>
+                        <p><strong>Tools:</strong> Git, VS Code, Docker</p>
+                        <p><strong>Other:</strong> REST APIs, Agile Methodology</p>
+                    </div>
+                </div>
+
+                <div class="InfoContainer" id="contactContainer" data-section="contact">
+                    <h2>Contact Information</h2>
+                    <div class="InfoContent">
+                        <p><strong>Email:</strong> shaurya.dhingra@cginfinity.com</p>
+                        <p><strong>Phone:</strong> +91-9283XXXXXX</p>
+                        <p><strong>LinkedIn:</strong> linkedin.com/in/shaurya-dhingra</p>
+                        <p><strong>GitHub:</strong> github.com/shaurya-dhingra</p>
+                        <p><strong>Address:</strong> Delhi,India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
         <footer>
             <p>Established in 1998</p>
         </footer>
+
+        <script>
+            const buttons = document.querySelectorAll('.UserBtn');
+            const containers = document.querySelectorAll('.InfoContainer');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const section = this.getAttribute('data-section');
+                    
+                    containers.forEach(container => {
+                        container.classList.remove('active');
+                    });
+                    
+                    buttons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    this.classList.add('active');
+                    
+                    const container = document.getElementById(section + 'Container');
+                    if (container) {
+                        container.classList.add('active');
+                    }
+                });
+            });
+
+            if (buttons.length > 0) {
+                buttons[0].click();
+            }
+        </script>
     </body>
 </html>
